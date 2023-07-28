@@ -1,4 +1,4 @@
-// console.clear();
+console.clear();
 
 // Part 1: Password
 const SUPER_SECRET_PASSWORD = "h4x0r1337";
@@ -12,6 +12,7 @@ if ((SUPER_SECRET_PASSWORD = false)) {
 }
 
 console.log("Test");
+
 // Part 2: Even / Odd
 const number = 6;
 
