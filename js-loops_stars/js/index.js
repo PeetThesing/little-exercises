@@ -1,22 +1,47 @@
 console.clear();
+console.log("Hello Peet");
 
 const starContainer = document.querySelector('[data-js="star-container"]');
 
-function renderStars() {
+function renderStars(filledStars) {
   // reset the star container before rerendering stars
   starContainer.innerHTML = "";
 
   //--v-- your code here --v--
   for (let star = 1; star <= 5; star++) {
     console.log(star);
-    let img = document.createElement("img");
+    const img = document.createElement("img");
+
     img.src = "assets/star-empty.svg";
     starContainer.append(img);
-
-    const filledStars = 1;
   }
-
   //--^-- your code here --^--
 }
-
 renderStars();
+
+//LÖSUNG ROLAND
+// const starContainer = document.querySelector('[data-js="star-container"]');
+
+// function renderStars(filledStars) {
+//   // reset the star container before rerendering stars
+//   starContainer.innerHTML = "";
+
+//   //--v-- your code here --v--
+
+//   for (let counter = 1; counter <= 5; counter++) {
+//     const starImage = document.createElement("img");
+//     if (counter <= filledStars) {
+//       starImage.src = "assets/star-filled.svg";
+//     } else {
+//       starImage.src = "assets/star-empty.svg";
+//     }
+//     starImage.addEventListener("click", () => {
+//       let filledStars = counter;
+//       renderStars(filledStars);
+//     });
+//     starContainer.append(starImage);
+//   }
+//   //--^-- your code here --^--
+// }
+
+// renderStars();

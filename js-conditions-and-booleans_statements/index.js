@@ -1,4 +1,9 @@
 console.clear();
+console.log("Hello Demon");
+
+let num = 1 + 2;
+
+console.log(num);
 
 // Part 1: Password
 const SUPER_SECRET_PASSWORD = "h4x0r1337";
