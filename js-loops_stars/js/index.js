@@ -1,5 +1,5 @@
 console.clear();
-console.log("Hello Peet");
+console.log("Hello my dear");
 
 const starContainer = document.querySelector('[data-js="star-container"]');
 
@@ -11,12 +11,13 @@ function renderStars(filledStars) {
   for (let star = 1; star <= 5; star++) {
     console.log(star);
     const img = document.createElement("img");
-
     img.src = "assets/star-empty.svg";
     starContainer.append(img);
   }
   //--^-- your code here --^--
 }
+star.addEventListener;
+
 renderStars();
 
 //LÖSUNG ROLAND
