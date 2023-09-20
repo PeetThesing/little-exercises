@@ -11,7 +11,6 @@ const gender = chance.gender({
 });
 
 export const server = createServer((request, response) => {
-<<<<<<< HEAD
   if (request.url === "/") {
     response.statusCode = 200;
     response.end(
@@ -21,10 +20,4 @@ export const server = createServer((request, response) => {
     response.statusCode = 404;
     response.end("Not Found");
   }
-=======
-  response.statusCode = 200;
-  response.end(
-    `Hello, my name is ${name} and I am ${age} years old. I am a ${profession}. I am ${gender}, even though my name might suggest otherwise.`
-  );
->>>>>>> refs/remotes/origin/main
 });
